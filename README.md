@@ -1,4 +1,4 @@
-# PenalizedLR_Matched_Case-control
+# PenalizedLR_Matched_CC
 
 R code available for penalized likelihood methods for matched case-control data
 
