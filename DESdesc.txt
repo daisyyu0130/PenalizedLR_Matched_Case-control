@@ -1,0 +1,45 @@
+File: DES.csv, comma separated plain text
+
+Data reconstructed from Table 2 of Herbst et al. (1971) on 
+adenocarcinoma of the vagina in young women. This study
+sought to identify exposures that might explain a cluster
+of vaginal cancers in young women in Boston in the late
+1960's. This was the first study to identify maternal treatment with
+diethylstilbesterol (DES) as a risk factor for vaginal cancer
+in exposed daughters.  The study design is matched case-control.
+Using hospital records, patients were matched to four controls 
+based on birth date and type of room (ward versus private).
+The matching was intended to reflect socioeconomic factors. 
+
+Variables measured on cases and controls included
+
+- Maternal age (in years)
+- Maternal smoking (at least 10 cigarettes per day before birth; yes/no)
+- Bleeding in this pregnancy (yes/no)
+- any prior pregnancy loss (yes/no)
+- Estrogen (DES) given in this pregnancy (yes/no)
+- Breast feeding (yes/no)
+- Intra-uterine X-ray exposure (yes/no)
+
+Seven of the eight cases and none of the controls were exposed to DES.
+The data summary table of the paper (Table 2) gives individual-level
+data on the case from each matched set, and summary data on the controls
+of each matched set. You can reconstruct the individual level data on the 
+controls for any one covariate, but can not get true multivariate data 
+on individuals. However, none of the controls were exposed to DES,
+so we can reconstruct the individual level data on any exposure plus DES.
+The analyses in the R script DES2.R are of maternal smoking and DES.
+(An earlier script DES.R used bleeding during pregnancy and DES.)
+
+Comment on this study from Breslow and Day: "The magnitude of this association
+persuades one of its causal nature, even though recall of drug treatment some
+20 years previously is a potential source of serious bias." 
+
+In a video interview given by Herbst in 2011 he said they worked hard
+to characterize each mother's recall as reliable -- pharma records
+were essentially non-existent back then. 
+
+
+Reference:
+Herbst, Ulfelder and Poskanzer. Adenocarcinoma of the vagina. New England
+Journal of Medicine (1971), 284(16):878-881.
