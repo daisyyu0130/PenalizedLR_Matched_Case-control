@@ -1,6 +1,6 @@
-# PenalizedLR_Matched_CC
+# PenalizedLR_ConditionalLR
 
-R code available for penalized likelihood methods for matched case-control data
+R code available for penalized conditional logistic regression for matched case-control data
 
 - clogitf.R — Firth’s penalized conditional likelihood regression
 - logFmatched_v3.R — log-F(m,m)-penalized conditional likelihood regression via data augmentation
